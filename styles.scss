@@ -1,6 +1,5 @@
 /* Imports */
-@import 'home';
-
+@import "home", "services";
 /* Master Styling */
 * {
     --theme-base: #ffffff;
@@ -91,9 +90,10 @@ h5 {
 }
 h6 {
     font-size: 1.5rem;
+    font-weight: normal;
 }
 p, li, img {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 //Components
