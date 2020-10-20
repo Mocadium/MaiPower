@@ -1,0 +1,92 @@
+<!--
+    Currently Missing for Assessment:
+        More mobile friendly code
+        One inline CSS Style (iframe)
+        Home Page Video
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--"Mobile Friendly - Meta Tag"-->
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> <!--"CSS - attached as external file"-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <nav class="section-theme-dark"> <!--"Use of newer block level elements"-->
+        <img src="assets/logo.png" alt="Mai Power Alignment And Tyres"> <!--"Image - Good use of alt attribute"-->
+        <div id="nav-elements">
+            <p>0800 123 456</p>
+            <p>123 Place Street, Suburbston</p>
+            <ul> <!--"Navigation - <ul>"-->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="nav-line"></div>
+    </nav>
+
+    <section id="home-banner"> <!--"Use of newer block level elements"-->
+        <video poster playsinline autoplay loop muted>
+            <source src="assets/banner.mp4" type="video/mp4">
+        </video>
+        <div>
+            <h1>MAI POWER</h1>
+            <h3>Alignment & Tyres</h3>
+            <button>Get In Touch</button> <!--"Call to action button"-->
+        </div>
+    </section>
+
+    <section class="section-theme-dark" id="home-services"> <!--"Use of newer block level elements"-->
+        <div class="section-theme-light" data-aos="fade-up">
+            <img src="assets/gear.png" alt="Service 1"> <!--"Image - Good use of alt attribute"-->
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio odit ipsa dolorum eum voluptatem, alias fugiat?</p>
+        </div>
+        <div class="section-theme-light" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/wheel.png" alt="Service 2"> <!--"Image - Good use of alt attribute"-->
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio odit ipsa dolorum eum voluptatem, alias fugiat?</p>
+        </div>
+        <div class="section-theme-light" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/wrench.png" alt="Service 3"> <!--"Image - Good use of alt attribute"-->
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio odit ipsa dolorum eum voluptatem, alias fugiat?</p>
+        </div>
+    </section>
+
+    <section id="home-products"> <!--"Use of newer block level elements"-->
+        <h2>Our Products</h2>
+        <div>
+            <img src="assets/product.png" alt="Product" data-aos="fade-up"> <!--"Image - Good use of alt attribute"-->
+            <img src="assets/product.png" alt="Product" data-aos="fade-up" data-aos-delay="100"> <!--"Image - Good use of alt attribute"-->
+            <img src="assets/product.png" alt="Product" data-aos="fade-up" data-aos-delay="200"> <!--"Image - Good use of alt attribute"-->
+        </div>
+    </section>
+
+    <section id="home-map"> <!--"Use of newer block level elements"-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.032296124742!2d172.64217331549415!3d-43.54336867912522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318b0e9d82ce5f%3A0x7ceaacd3a4bd2778!2sMai%20Power%20Alignment%20and%20Tires%20LTD!5e0!3m2!1sen!2snz!4v1602830442239!5m2!1sen!2snz" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+    <footer class="section-theme-dark"> <!--"Use of newer block level elements"-->
+        <img src="assets/logo.png" alt="Mai Power Alignment And Tyres"> <!--"Image - Good use of alt attribute"-->
+        <div>
+            <h4>Contact Us</h4>
+            <p>0800 123 456</p>
+            <p>123 Place Street, Suburbston</p>
+            <p>email@email.co.nz</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
