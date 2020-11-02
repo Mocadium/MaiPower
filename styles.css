@@ -370,21 +370,35 @@ p, li, img {
   font-size: 1.8rem;
 }
 
-button, input[type="submit"] {
+button {
   background-color: var(--theme-primary);
   border: none;
   padding: 1.5rem 3rem;
-  outline: none;
+  text-decoration: none;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover {
   background-color: var(--theme-secondary);
 }
 
-button a, input[type="submit"] a {
+button a {
   font-size: 2.5rem;
   color: var(--theme-text-primary-light);
   text-decoration: none;
+}
+
+input[type="submit"] {
+  background-color: var(--theme-primary);
+  border: none;
+  padding: 1.5rem 3rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: var(--theme-text-primary-light);
+  text-decoration: none;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--theme-secondary);
 }
 
 .section-theme-dark {
