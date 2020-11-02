@@ -1,5 +1,5 @@
 /* Imports */
-@import "home", "services";
+@import "home", "services", "contactus", "about";
 /* Master Styling */
 * {
     --theme-base: #ffffff;
@@ -97,15 +97,18 @@ p, li, img {
 }
 
 //Components
-button {
+button, input[type="submit"]{
     background-color: var(--theme-primary);
-    font-size: 2.5rem;
-    color: var(--theme-text-primary-light);
     border: none;
     padding: 1.5rem 3rem;
     outline: none;
     &:hover {
         background-color:var(--theme-secondary);
+    }
+    a {
+        font-size: 2.5rem;
+        color: var(--theme-text-primary-light);
+        text-decoration: none;
     }
 }
 
@@ -127,10 +130,8 @@ button {
 @media screen and (max-width: 832px) {
     //Layout
     nav {
-        #nav-elements {
-            ul {
-                display:none;
-            }
+        #nav-elements, #nav-line {
+            display:none;
         }
     }
 }

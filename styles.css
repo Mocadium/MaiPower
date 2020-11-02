@@ -140,7 +140,6 @@
 
 #services .services-line {
   width: 2px;
-  height: auto;
   border-radius: 1px;
   margin: 0 4rem;
 }
@@ -173,6 +172,73 @@
 
 #services .services-section:nth-child(odd) .services-line {
   background-color: var(--theme-text-primary-dark);
+}
+
+#contactus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactus #contactus-line {
+  width: 2px;
+  height: 20rem;
+  border-radius: 1px;
+  margin: 0 4rem;
+  background-color: var(--theme-text-primary-dark);
+}
+
+#contactus #contactus-elements {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#contactus form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  font-size: 3rem;
+}
+
+#contactus form input {
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#contactus form textarea {
+  resize: none;
+  padding: 0.5rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
+#contactus-map {
+  padding: 0;
+}
+
+#contactus-map iframe {
+  width: 100%;
+  height: 40rem;
+}
+
+#about-banner {
+  padding: 0;
+}
+
+#about-banner img {
+  width: 100%;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Master Styling */
@@ -304,17 +370,21 @@ p, li, img {
   font-size: 1.8rem;
 }
 
-button {
+button, input[type="submit"] {
   background-color: var(--theme-primary);
-  font-size: 2.5rem;
-  color: var(--theme-text-primary-light);
   border: none;
   padding: 1.5rem 3rem;
   outline: none;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
   background-color: var(--theme-secondary);
+}
+
+button a, input[type="submit"] a {
+  font-size: 2.5rem;
+  color: var(--theme-text-primary-light);
+  text-decoration: none;
 }
 
 .section-theme-dark {
@@ -335,7 +405,7 @@ button:hover {
 
 /* Media Queries */
 @media screen and (max-width: 832px) {
-  nav #nav-elements ul {
+  nav #nav-elements, nav #nav-line {
     display: none;
   }
 }

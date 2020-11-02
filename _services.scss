@@ -9,7 +9,6 @@
     }
     .services-line {
         width: 2px;
-        height: auto;
         border-radius: 1px;
         margin: 0 4rem;
     }
@@ -18,7 +17,7 @@
         display: flex;
         &:nth-child(even) {
             background-color: black;
-            background: linear-gradient(rgba(0, 0, 0, 0.75)), url("assets/services-bg.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.75)), url('assets/services-bg.jpg');
             background-size: cover;
             h3, p {
                 color: var(--theme-text-primary-light);
